@@ -1,0 +1,165 @@
+body{
+    background-color: #1E193F;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    margin: 0;
+}
+
+h1{
+    font-family: Trebuchet MS;
+    font-size: 50px;
+    color: #FA7848;
+    text-align: center;
+    margin: 50px 0;
+}
+
+h3, h2{
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+p{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.margin{
+    margin: 80px 200px 100px 200px;
+}
+.cor{
+    background-color: #282450;
+    padding: 40px;
+    margin: 0;
+    width: 100%;
+}
+
+.etapas{
+    display: flex;
+    gap: 80px;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.lista{
+    display: flex;
+    justify-content: center;
+}
+
+.lista ul {
+  text-align: left;         /* o texto continua alinhado à esquerda */
+  max-width: 600px;         /* limite de largura para não ficar esticado demais */
+  padding-left: 1.2rem;     /* espaço da bolinha da lista */
+}
+
+li{
+    color: white;
+    width: auto;
+    max-width: 100%;
+    overflow-wrap: anywhere; /* quebra palavras longas */
+    word-break: break-word;
+    line-height: 1.5;
+}
+
+.horas{
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #FA7848;
+    padding: 25px; 
+    width: 450px;
+    margin: auto;
+}
+
+b{
+  font-weight: 600;  
+}
+.quadro{
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #FA7848;
+    padding: 50px;
+    justify-content: center;
+    flex: 1 1 420px;      
+    max-width: 560px;   
+    min-height: 100%;  
+    margin: 0;
+    min-width: 0;
+}
+
+* {
+    box-sizing: border-box;
+    max-width: 100%; 
+}
+
+.quadro ul {
+    padding-left: 20px;   /* espaço para as bolinhas */
+    margin: 0;
+    max-width: 100%;      /* nunca ultrapassa a borda do quadro */
+    box-sizing: border-box;
+}
+
+.quadro li {
+    color: white;
+    width: 100%;          /* ocupa só a largura do pai */
+    word-wrap: break-word; /* quebra linhas grandes */
+    overflow-wrap: break-word;
+    font-size: 20px;      /* ajusta melhor no mobile */
+    line-height: 1.4em;   /* melhora leitura */
+}
+
+
+@media (max-width: 1024px) {
+    body {
+        font-size: 18px; 
+    }
+
+    h1 {
+        font-size: 30px;
+        margin: 30px 0;
+    }
+
+    h2, h3 {
+        font-size: 20px;
+    }
+
+    .margin {
+        margin: 32px 16px; 
+    }
+
+    .cor{
+        background-color: #282450;
+        padding: 40px;
+        margin: 0;
+        width: 100%;
+    }
+
+    .etapas {
+        flex-direction: column;  
+        gap: 20px;
+        align-items: center;
+    }
+
+    .quadro {
+        flex: 1 1 100%;
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    li {
+        width: 100%; 
+        font-size: 20px;
+        max-width: 100%;
+        word-wrap: break-word;
+    }
+
+    .horas {
+        width: 100%; 
+        text-align: center;
+    }
+    
+}
